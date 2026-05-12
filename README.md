@@ -48,3 +48,62 @@ Join our community of developers creating universal apps.
 
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
+---
+
+## 🤖 Machine Learning Pipeline (Plant Disease Recognition)
+
+This project includes a built-in image classification model pipeline built with TensorFlow/Keras and Flask. The model predicts 5 classes of plant diseases from images.
+
+### 1. Setup
+
+Install the required Python dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+### 2. Prepare the Dataset
+
+To train your own model, organize your plant images into the `dataset/` directory. The folder structure should look exactly like this:
+
+```text
+dataset/
+├── Tomato Blight/
+│   ├── image1.jpg
+│   └── image2.jpg
+├── Chili Wilt/
+├── Brinjal Rot/
+├── Cassava Mosaic/
+└── Bean Rust/
+```
+
+> **Tip:** If you just want to test the script without real images, you can generate a dummy dataset by running:
+> ```bash
+> python create_dummy_dataset.py
+> ```
+
+### 3. Train the Model
+
+Once your dataset is ready, run the training script. This script uses **MobileNetV2** (transfer learning) for fast and lightweight training:
+
+```bash
+python train_model.py
+```
+This will train the model and save it as `vegetable_disease_model.h5` in the root directory.
+
+### 4. Run the Prediction Server
+
+To start the Flask backend API for your React Native app:
+
+```bash
+python app.py
+```
+The server will run on `http://localhost:5000` and expose the `/predict` endpoint (supports CORS).
+
+---
+
+## 🔐 Demo Credentials
+
+To bypass authentication and access the app for testing or demonstration purposes, you can use the following hardcoded credentials:
+- **Email:** `admin@eco.com`
+- **Password:** `admin123`

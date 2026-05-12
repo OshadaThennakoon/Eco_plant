@@ -1,0 +1,27 @@
+{
+    "tomato": {
+        "0": "Early Blight",
+        "1": "Healthy",
+        "2": "Late Blight"
+    },
+    "chili": {
+        "0": "Healthy",
+        "1": "Leaf Curl",
+        "2": "Wilt"
+    },
+    "brinjal": {
+        "0": "Fruit Rot",
+        "1": "Healthy",
+        "2": "Shoot Borer"
+    },
+    "cassava": {
+        "0": "Brown Streak",
+        "1": "Healthy",
+        "2": "Mosaic Disease"
+    },
+    "bean": {
+        "0": "Angular Leaf Spot",
+        "1": "Healthy",
+        "2": "Rust"
+    }
+}
